@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/solid.min.js">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Task List</title>
+</head>
+<body onload="TASK.showItemsInUI()">
+    <div class="container">
+        <section class="heading">TASK LIST</section>
+        <form action="" id="form" class="form">
+            <input type="text" placeholder="New Task" id="input-task" autocomplete="off">
+            <input type="submit" value="ADD TASK" id="add-task">
+        </form>
+        <h3 id="task-text">TASKS</h3>
+        <input type="text" placeholder="Filter" id="filter" autocomplete="off">
+        <!-- <hr> -->
+        <ul class="item-list" id="item-list">
+        </ul>
+        <input type="button" id="clear-task" value="CLEAR TASK">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
